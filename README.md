@@ -4,9 +4,9 @@ This Python script converts a color image to grayscale using a manual averaging 
 
 ## What It Does
 
-- Loads an image using OpenCV (`cv2.imread`)
-- Converts the image to grayscale by averaging the Red, Green, and Blue (RGB) values for each pixel
-- Displays the result using Matplotlib
+* Loads an image using OpenCV (`cv2.imread`)
+* Converts the image to grayscale by averaging the Red, Green, and Blue (RGB) values for each pixel
+* Displays the result using Matplotlib
 
 Note: OpenCV uses BGR format by default, not RGB.
 
@@ -37,12 +37,24 @@ python grayscale_average.py
 
 ## Dependencies
 
-- `opencv-python`
-- `numpy`
-- `matplotlib`
+* `opencv-python`
+* `numpy`
+* `matplotlib`
 
 Install them with:
 
 ```bash
 pip install opencv-python numpy matplotlib
 ```
+
+## Result
+
+The processed images are saved in the `data/` folder:
+
+**Original (`test.jpg`):**
+
+![Original Image](data/test.jpg)
+
+**Grayscale Result (`result.jpg`):**
+
+![Grayscale Image](data/result.jpg)
